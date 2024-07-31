@@ -3,7 +3,8 @@
     <head>
         <title>Cadastro de Livros</title>
         <style>
-            body {
+            body {          
+                background-color: #CF8F9FA;
                 font-family: sans-serif;
             }
             .container {
@@ -11,26 +12,37 @@
             }
 
             form {
-                /* background-color: blue; */
                 display: flex;
                 flex-direction: column;
             }
 
             input {
-                padding: 10px;
+                padding: 15px;
                 margin-top: 10px;
                 border-radius: 5px;
+                border: none;
+                background-color: #CED4DA;
             }
 
             input[type="submit"] {
-                
+                cursor: pointer;
+                color: white;
+                font-weight: bold;
                 border: none;
-                background-color: #007bff;
+                background-color: #0353A4;
             }
 
             input[type="reset"] {
-                border: none;
-                background: none;
+               cursor: pointer;
+               color: #0353A4;
+               font-weight: bold;
+               border: none;
+               background: none;
+               transition: 0.3s;
+            }
+
+            input[type="reset"]:hover {
+               background-color: #B9D6F2;
             }
         </style>
     </head>
