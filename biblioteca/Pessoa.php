@@ -15,5 +15,13 @@
         public function getCpf() {
             return $this->cpf;
         }
+
+        public function setNome($n) {
+            $this->nome = $n;
+        }
+
+        public function setCpf($c) {
+            $this->cpf
+        }
     } 
 ?>

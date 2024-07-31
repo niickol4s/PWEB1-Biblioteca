@@ -21,5 +21,17 @@
         public function getAutor() {
             return $this->autor;
         }
+
+        public function setTitulo($t) {
+            $this->titulo = $t;
+        }
+
+        public function setAno($an) {
+            $this->ano = $an;
+        }
+
+        public function setAutor($at) {
+            $this->autor = $at;
+        }
     }
 ?>
