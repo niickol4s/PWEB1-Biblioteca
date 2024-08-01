@@ -4,11 +4,35 @@
         <title>Cadastro de Livros</title>
         <style>
             body {          
-                background-color: #CF8F9FA;
+                display: flex;
+                justify-content: center;
+                background-color: #dee2e6;
                 font-family: sans-serif;
             }
+            
             .container {
-                width: 300px;
+                padding: 16px;
+                border-radius: 5px;
+                background-color: #F8F9FA;
+                width: 400px;
+            }
+
+            h1 {
+              font-size: 28px;
+              color: #212529;
+            }
+            
+            p {
+              font-size: 18px;
+              color: #343A40;
+            }
+            
+            label {
+              font-size: 18px;
+              color: #212529;
+              font-weight: bold;
+              margin-left: 16px;
+              margin-top: 10px;
             }
 
             form {
@@ -17,14 +41,18 @@
             }
 
             input {
+                color: #343A40;
+                font-size: 17px;
+                font-weight: bold;
                 padding: 15px;
                 margin-top: 10px;
                 border-radius: 5px;
                 border: none;
-                background-color: #CED4DA;
+                background-color: #dee2e6;
             }
 
             input[type="submit"] {
+                font-size: 17px;
                 cursor: pointer;
                 color: white;
                 font-weight: bold;
@@ -33,6 +61,7 @@
             }
 
             input[type="reset"] {
+               font-size: 17px;
                cursor: pointer;
                color: #0353A4;
                font-weight: bold;
