@@ -20,6 +20,7 @@
             h1 {
               font-size: 28px;
               color: #212529;
+              margin-bottom: 5px;
             }
             
             p {
@@ -40,6 +41,14 @@
                 flex-direction: column;
             }
 
+            .btn {
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 16px;
+            }
+
             input {
                 color: #343A40;
                 font-size: 17px;
@@ -52,6 +61,8 @@
             }
 
             input[type="submit"] {
+                height: 50px;
+                width: 195px;
                 font-size: 17px;
                 cursor: pointer;
                 color: white;
@@ -61,6 +72,8 @@
             }
 
             input[type="reset"] {
+               height: 50px;
+               width: 195px;
                font-size: 17px;
                cursor: pointer;
                color: #0353A4;
@@ -90,8 +103,10 @@
                 <label for="ano">Ano de Publicação:</label>
                 <input placeholder="Ano de Publicação" type="date" id="ano" requered></input>
                 
-                <input type="submit" value="Cadastrar"></input>
-                <input type="reset" value="Limpar"></input>
+                <div class="btn">
+                  <input type="submit" value="Cadastrar"></input>
+                  <input type="reset" value="Limpar"></input>
+                </div>
             </form>
         </div>
 
