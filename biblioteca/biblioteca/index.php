@@ -60,12 +60,16 @@
                 background-color: #dee2e6;
             }
 
+            input:focus {
+              outline-color: #0353A4;
+            }
+
             input[type="submit"] {
                 height: 50px;
                 width: 195px;
                 font-size: 17px;
                 cursor: pointer;
-                color: white;
+                color: #F8F9FA;
                 font-weight: bold;
                 border: none;
                 background-color: #0353A4;
