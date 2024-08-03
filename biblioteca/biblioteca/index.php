@@ -13,27 +13,28 @@
             .container {
                 padding: 16px;
                 border-radius: 5px;
+                border: 1px solid rgba(52, 58, 64, 0.1);
                 background-color: #F8F9FA;
                 width: 400px;
             }
 
             h1 {
-              font-size: 28px;
-              color: #212529;
-              margin-bottom: 5px;
+                font-size: 28px;
+                color: #212529;
+                margin-bottom: 5px;
             }
             
             p {
-              font-size: 18px;
-              color: #343A40;
+                font-size: 18px;
+                color: #343A40;
             }
             
             label {
-              font-size: 18px;
-              color: #212529;
-              font-weight: bold;
-              margin-left: 16px;
-              margin-top: 10px;
+                font-size: 18px;
+                color: #212529;
+                font-weight: bold;
+                margin-left: 16px;
+                margin-top: 10px;
             }
 
             form {
@@ -42,11 +43,11 @@
             }
 
             .btn {
-              display: flex;
-              flex-direction: row-reverse;
-              justify-content: space-between;
-              align-items: center;
-              margin-top: 16px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 16px;
             }
 
             input {
@@ -56,12 +57,12 @@
                 padding: 15px;
                 margin-top: 10px;
                 border-radius: 5px;
-                border: none;
+                border: 1px solid rgba(52, 58, 64, 0.1);
                 background-color: #dee2e6;
             }
 
             input:focus {
-              outline-color: #0353A4;
+                outline: 1px solid #0353A4;
             }
 
             input[type="submit"] {
