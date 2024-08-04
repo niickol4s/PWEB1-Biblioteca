@@ -13,28 +13,29 @@
             .container {
                 padding: 16px;
                 border-radius: 5px;
-                border: 1px solid rgba(52, 58, 64, 0.1);
                 background-color: #F8F9FA;
+                border: 1px solid rgba(52, 58, 64, 0.1);
                 width: 400px;
+                box-shadow: rgba(248, 249, 250, 0.1) 0px 2px 8px 0px;
             }
 
             h1 {
-                font-size: 28px;
-                color: #212529;
-                margin-bottom: 5px;
+              font-size: 28px;
+              color: #212529;
+              margin-bottom: 2px;
             }
             
             p {
-                font-size: 18px;
-                color: #343A40;
+              font-size: 18px;
+              color: #343A40;
             }
             
             label {
-                font-size: 18px;
-                color: #212529;
-                font-weight: bold;
-                margin-left: 16px;
-                margin-top: 10px;
+              font-size: 18px;
+              color: #212529;
+              font-weight: bold;
+              margin-left: 16px;
+              margin-top: 10px;
             }
 
             form {
@@ -43,11 +44,11 @@
             }
 
             .btn {
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 16px;
+              display: flex;
+              flex-direction: row-reverse;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 16px;
             }
 
             input {
@@ -62,7 +63,7 @@
             }
 
             input:focus {
-                outline: 1px solid #0353A4;
+              outline: 1px solid #0353A4;
             }
 
             input[type="submit"] {
@@ -74,6 +75,15 @@
                 font-weight: bold;
                 border: none;
                 background-color: #0353A4;
+                transition: 0.3s;
+            }
+
+            input[type="submit"]:focus {
+              outline: 0;
+            }
+
+            input[type="submit"]:active {
+              background-color: #003559;
             }
 
             input[type="reset"] {
@@ -90,6 +100,10 @@
 
             input[type="reset"]:hover {
                background-color: #B9D6F2;
+            }
+
+            input[type="reset"]:focus {
+              outline: 0;
             }
         </style>
     </head>
