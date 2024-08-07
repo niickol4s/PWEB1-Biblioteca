@@ -1,3 +1,7 @@
+<?php
+    require_once 'processa_livro.php';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -111,22 +115,36 @@
 
         <div class="container">
             <h1>Cadastro de Livros</h1>
+
+            <?php if(isset($mensagem)) : ?>
+                <div class="mensagem"><?php echo $mensagem; ?></div>
+            <?php endif; ?>
+
             <p>Cadastre de forma rápida livros, seus autores e anos de publicação.</p>
             <form method="POST" action="">
                 <label for="titulo">Título:</label>
-                <input placeholder="Título" type="text" id="titulo" requered></input>
+                <input placeholder="Título" type="text" id="titulo" name="titulo" requered></input>
                 
                 <label for="autor">Autor:</label>
-                <input placeholder="Autor" type="text" id="autor" requered></input>
+                <input placeholder="Autor" type="text" id="autor" name="autor" requered></input>
                 
                 <label for="ano">Ano de Publicação:</label>
-                <input placeholder="Ano de Publicação" type="date" id="ano" requered></input>
+                <input placeholder="Ano de Publicação" type="date" id="ano" name="ano" requered></input>
                 
                 <div class="btn">
                   <input type="submit" value="Cadastrar"></input>
                   <input type="reset" value="Limpar"></input>
                 </div>
             </form>
+
+            <?php if($livro_recuperado) : ?>
+                <div class="livro-detalhes">
+                    <h2>Livros Cadastrados:</h2>
+                    <p><strong>Título:<strong> <?php echo $livro_recuperado->getTitulo(); ?></p>
+                    <p><strong>Autor:<strong> <?php echo $livro_recuperado->getAutor(); ?></p>
+                    <p><strong>Ano de Publicação:<strong> <?php echo $livro_recuperado->getAno(); ?></p>
+                </div>
+            <?php endif; ?>
         </div>
 
     </body>
