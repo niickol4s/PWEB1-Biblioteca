@@ -5,9 +5,9 @@
         private $autor;
 
         public function __construct($titulo, $ano, $autor) {
-            $this->titulo = titulo;
-            $this->ano = ano;
-            $this->autor = autor;
+            $this->titulo = $titulo;
+            $this->ano = $ano;
+            $this->autor = $autor;
         }
 
         public function getTitulo() {
@@ -20,18 +20,6 @@
 
         public function getAutor() {
             return $this->autor;
-        }
-
-        public function setTitulo($t) {
-            $this->titulo = $t;
-        }
-
-        public function setAno($an) {
-            $this->ano = $an;
-        }
-
-        public function setAutor($at) {
-            $this->autor = $at;
         }
     }
 ?>
